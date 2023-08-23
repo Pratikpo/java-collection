@@ -39,11 +39,13 @@ public class Stack {
             return -1;
         } else {
             int topElement = stack[top];  // Get the top element
-            stack[top] = 0;  // Reset the value at the top position
+            stack[top] = 0;  // Reset the value at the top position//must
             top--;  // Decrement top to point to the new top element
             System.out.println("Item " + topElement + " popped from the stack at position " + top);
-            printStack();  // Print the current state of the stack
+            printStack();
             return topElement;
+
+
         }
     }
     // Returns the top element of the stack without removing it

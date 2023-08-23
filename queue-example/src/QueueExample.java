@@ -35,6 +35,7 @@ public class QueueExample {
                 return -1;
             }else {
             int frontElement = arr[front];
+
             front++;
                 return frontElement;
 
@@ -69,6 +70,7 @@ public class QueueExample {
 
         System.out.println("Peek: " + q.peek());
         System.out.println("Dequeue: " + q.dequeue());
+        q.printQueue();
         System.out.println("Peek: " + q.peek());
 
         q.enqueue(4);
