@@ -33,10 +33,14 @@ public class QueueExample {
             if (isEmpty()) {
                 System.out.println("Queue is empty. Cannot dequeue.");
                 return -1;
+            }else {
+            int frontElement = arr[front];
+            front++;
+                return frontElement;
+
             }
-            int frontElement = arr[front++];
-            printQueue();
-            return frontElement;
+
+
 
         }
 
@@ -69,11 +73,7 @@ public class QueueExample {
 
         q.enqueue(4);
         q.enqueue(5);
+        q.enqueue(5);
 
-        while (!q.isEmpty()) {
-            System.out.println("Dequeue: " + q.dequeue());
-        }
-
-        System.out.println("Is empty: " + q.isEmpty());
     }
 }
