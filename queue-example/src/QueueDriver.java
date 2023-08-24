@@ -7,19 +7,11 @@ public class QueueDriver {
         queue.dequeue();
         queue.enqueue(10);
         queue.enqueue(20);
-        queue.dequeue();
         queue.enqueue(30);
         queue.dequeue();
+        queue.dequeue();
+        queue.printQueue();
         queue.enqueue(40);
-        queue.enqueue(50);
-        queue.enqueue(60);
-
-        queue.dequeue();
-        queue.dequeue();
-        queue.enqueue(10);
-
-        queue.dequeue();
-        queue.dequeue();
 
     }
 }
