@@ -17,7 +17,7 @@ public class QueueDriver {
         queue.dequeue();
         queue.dequeue();
         queue.enqueue(10);
-        queue.dequeue();
+
         queue.dequeue();
         queue.dequeue();
 
