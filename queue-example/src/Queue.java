@@ -10,13 +10,17 @@ public class Queue {
         this.rear = -1;
         this.queue = new int[capacity];
     }
-    /*
-    enqueue
-    dequeue
-    isFull
-    isEmpty
-    peek
-     */
+    boolean isFull(){
+        return rear == (capacity - 1);
+    }
+
+    boolean isEmpty(){
+        return front == -1;
+    }
+
+    int peek(){
+        return queue[front];
+    }
 
     /*
     Add/insert an item to the end of the queue
@@ -46,8 +50,8 @@ public class Queue {
         } else {
             removedItem = queue[front];
             queue[front] = 0;
-            if (front == (capacity-1)) {
-                front = -1;
+            if (front == (capacity-1)) {    //the queue is now empty after removing the last item.
+                front = -1;                //front and rear pointers are reset to -1, indicating an empty queue.
                 rear = -1;
             }else {
                 front++;
@@ -57,17 +61,7 @@ public class Queue {
         return removedItem;
     }
 
-    boolean isFull(){
-        return rear == (capacity - 1);
-    }
 
-    boolean isEmpty(){
-        return front == -1;
-    }
-
-    int peek(){
-        return queue[front];
-    }
 
     void printQueue() {
         System.out.println("---------" +
