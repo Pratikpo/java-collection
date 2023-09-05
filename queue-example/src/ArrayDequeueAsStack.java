@@ -8,6 +8,7 @@ public class ArrayDequeueAsStack {
          * Array deques have no capacity restrictions;
          * they grow as necessary to support usage.
          * They are not thread-safe;
+         * lll
          * in the absence of external synchronization,
          * they do not support concurrent access by multiple threads.
          * Null elements are prohibited.
