@@ -28,7 +28,7 @@ public class ArrayDequeueAsStack {
         print(Integer);
         Integer.pop();
         print(Integer);
-        Integer.push(50);
+
 
 
         Integer.push(60);
