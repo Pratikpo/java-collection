@@ -28,6 +28,7 @@ public class ArrayDequeueAsStack {
         print(Integer);
         Integer.pop();
         print(Integer);
+        Integer.push(60);
 
 
 
